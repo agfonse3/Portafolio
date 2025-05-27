@@ -148,7 +148,7 @@ section {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    width: calc(33.33% - 20px); /* Hace que cada proyecto ocupe un tercio del ancho */
+    width: 350px; /* Hace que cada proyecto ocupe un tercio del ancho */
     text-align: center;
     min-width: 300px; /* Evita que se hagan demasiado pequeños en pantallas reducidas */
 }
@@ -164,7 +164,11 @@ section {
     font-size: 24px;
     margin-top: 15px;
 }
-
+.project video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 .project a {
    display: inline-block;
     margin-top: 15px;
