@@ -184,17 +184,30 @@ section {
 }
 
 /* Habilidades */
-#habilidades ul {
-    list-style: none;
-    padding: 0;
+
+
+.habilidades-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-#habilidades li {
-    background: #0073e6;
+.habilidad {
+    background: linear-gradient(45deg, #00b4d8, #004e92);
     color: white;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 180, 216, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.habilidad:hover {
+    background: linear-gradient(45deg, #004e92, #00b4d8);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 180, 216, 0.8);
 }
 
 /* Contacto */
