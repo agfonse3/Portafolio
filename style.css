@@ -322,11 +322,23 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.category li i {
+    font-size: 50px; /* Agranda los íconos */
+    margin-right: 20px; /* Aumenta la separación entre el ícono y el texto */
+    margin-top: 15px; /* Ajusta el espacio entre el ícono y el texto */
+     margin-bottom: 15px; /* Ajusta el espacio entre el ícono y el texto */
+}
+.category li img {
+    width: 50px; /* Agranda los íconos */
+    height: 50px;
+    margin-top: 15px; /* Ajusta el espacio entre el ícono y el texto */
+     margin-bottom: 15px; /* Ajusta el espacio entre el ícono y el texto */
+    margin-right: 15px; /* Ajusta el espacio entre el ícono y el texto */
+}
 .category {
     margin: 20px;
     padding: 20px;
-     background: linear-gradient(45deg, #004e92, #00b4d8);
+     background: linear-gradient(45deg, #001629, #0a2a5b);
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
