@@ -269,6 +269,7 @@ section {
 }
 
 .contacto-container {
+    
     background: linear-gradient(45deg, #16213e, #004e92);
     /* Fondo degradado elegante */
     padding: 20px;
@@ -278,9 +279,11 @@ section {
 
 .info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas */
+    justify-content: space-around; /* Distribuye los elementos equitativamente */
+    gap: 20px;
 }
+
 
 .info a {
     display: flex;
