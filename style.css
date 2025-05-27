@@ -9,8 +9,6 @@ body {
 
 /* Encabezado */
 header {
-     /*background: url('img/control.png') no-repeat center center;
-     width: 150px; /* Ajusta el tamaño del control */
     height: auto;
     color: white;
     padding: 40px 20px;
@@ -132,22 +130,6 @@ section {
 
 .contenido {
     animation: fadeIn 1s ease-in-out;
-}
-
-/* Sobre mí */
-/*#sobre-mi {
-    background-color: #0f3460;
-    padding: 60px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-.perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #0073e6;
-    margin-bottom: 20px;
 }
 
 /* Proyectos */
