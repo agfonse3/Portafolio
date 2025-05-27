@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,18 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="fondo"></div>
     <header>
-        <h1>Angela Fonseca</h1>
-        <p>Desarrolladora de Videojuegos | Diseñadora Interactiva</p>
+
+        <div class="banner">
+            <div class="text-container">
+                <h1>Angela Fonseca</h1>
+                <p>Desarrolladora de Videojuegos | Diseñadora Interactiva</p>
+            </div>
+            <img src="img/control.png" alt="Control de videojuegos" class="control">
+        </div>
     </header>
 
     <nav>
@@ -26,34 +35,66 @@
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <div class="contenido">
-            <img src="OIG3 (2).jpeg" alt="Angela Fonseca" class="perfil">
+            <img src="img/Angela.jpeg" alt="Angela Fonseca" class="perfil">
+             <div class="texto">
             <p>
-                ¡Hola! Soy Angela Fonseca, una desarrolladora de videojuegos apasionada por la creación de experiencias interactivas únicas. 
+                ¡Hola! Soy Angela Fonseca, una desarrolladora de videojuegos apasionada por la creación de experiencias
+                interactivas únicas.
                 Me especializo en C#, diseño de mecánicas de juego, y narrativa interactiva.
             </p>
             <p>
-                Desde siempre he amado los videojuegos no solo como entretenimiento, sino como una forma de contar historias y conectar con las personas. 
-                Me encanta experimentar con nuevas tecnologías y encontrar formas creativas de hacer que los juegos sean más envolventes.
+                Desde siempre he amado los videojuegos no solo como entretenimiento, sino como una forma de contar
+                historias y conectar con las personas.
+                Me encanta experimentar con nuevas tecnologías y encontrar formas creativas de hacer que los juegos sean
+                más envolventes.
             </p>
             <p>
-                Mi objetivo es seguir evolucionando en el mundo del desarrollo de videojuegos, colaborando con equipos innovadores y aportando nuevas ideas 
+                Mi objetivo es seguir evolucionando en el mundo del desarrollo de videojuegos, colaborando con equipos
+                innovadores y aportando nuevas ideas
                 a la industria. ¡Bienvenido a mi portafolio!
             </p>
+            </div>
     </section>
 
     <section id="proyectos">
-        <h2>Prototipos</h2>
-        <div class="project">
-            <img src="4UzW97.png" alt="Proyecto 1">
-            <h3>Soccer</h3>
-            <p>Un juego de futbol donde el balon es tu peor enemigo</p>
-            <a href="https://agfonse.itch.io/soccer">Ver en Itch.io</a>
-        </div>
-        <div class="project">
-            <img src="red-balloon-helium-kawaii-free-vector.jpg" alt="Proyecto 2" width="300px">
-            <h3>Ballon</h3>
-            <p>Un juego web donde tendras que esquivar peligros y recolectar dinero</p>
-            <a href="https://agfonse.itch.io/ballonn">Ver en Itch.io</a>
+        <h2>Proyectos</h2>
+        <div class="proyectos-container">
+            <div class="project">
+                <img src="img/sokobunny.jpg" alt="Proyecto 3">
+                <h3>SokoBunny</h3>
+                <p>Juego de Puzzle. Desarrollado para la GameJam Assemble  <br>
+               <p><b>Level Design/Sound Design:</b> <br> Creé los niveles estratégicos y los efectos sonoros del personaje para mejorar la inmersión y jugabilidad.</p>
+                <a href="https://agfonse.itch.io/mazmood" target="_blank">Ver en Itch.io</a>
+            </div>
+            <div class="project">
+                <img src="img/mazmood.png" alt="Proyecto 3">
+                <h3>Mazmood</h3>
+                <p>Juego de Aventura. Desarrollado para la GameJam You Are The Dungeon  <br>
+               <p><b>UI/UX y Game Development:</b> <br> Diseñe la interfaz y la experiencia del usuario para que la navegación y
+                    la jugabilidad fueran intuitivas.</p>
+                <a href="https://agfonse.itch.io/mazmood" target="_blank">Ver en Itch.io</a>
+            </div>
+            <div class="project">
+                <img src="img/boomslimes.gif" alt="Proyecto 1">
+                <h3>BoomSlime</h3>
+                <p>Captura slimes para sumar puntos, pero cuidado: algunos esconden sorpresas inesperadas. <br>
+                <p>
+                <p> <b> Game Development:</b> Implementé mecánicas en Unity para que los slimes reaccionaran dinámicamente a cada explosión.</p>
+                <a href="https://agfonse.itch.io/boomslime" target="_blank">Ver en Itch.io</a>
+            </div>
+            <div class="project">
+                <img src="img/4UzW97.png" alt="Proyecto 2">
+                <h3>Soccer</h3>
+                <p>El balón no es tu amigo en este juego. <br><br> <b> Game Development:</b> <br> Diseñé y programé la lógica de colisión para convertirlo en una mecánica inesperadamente desafiante.</p>
+                <a href="https://agfonse.itch.io/soccer" target="_blank">Ver en Itch.io</a>
+            </div>
+            <div class="project">
+                <img src="img/red-balloon-helium-kawaii-free-vector.jpg" alt="Proyecto 3">
+                <h3>Ballon</h3>
+                <p>Un juego web en el que debes esquivar peligros y recolectar dinero para avanzar.</p>
+                <br> <b> Game Development:</b> <br>Programé la lógica de movimiento y colisión del globo con los objetos.</p>
+                <a href="https://agfonse.itch.io/ballonn" target="_blank">Ver en Itch.io</a>
+            </div>
         </div>
     </section>
 
@@ -63,27 +104,30 @@
             <li>Programación en C#</li>
             <li>Diseño de niveles y mecánicas</li>
             <li>Arte digital y modelado 3D</li>
-           
+
         </ul>
     </section>
     <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-container">
-            <div class="info">
-                <p>¿Quieres conectar conmigo? Escríbeme o sígueme en mis redes:</p>
-                <a href="mailto:gisefonseca@hotmail.com"><i class="fa fa-envelope"></i> Correo</a>
-                <a href="https://github.com/angela-fonseca"><i class="fa fa-github"></i> GitHub</a>
-                <a href="https://agfonse.itch.io/"><i class="fa fa-gamepad"></i> Itch.io</a>
-            </div>
-            
-        </div>
-    </section>
-    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-       
+<h1>Contacto</h1>
+<div class="contacto-container">
+    <div class="info">
+        <p>¿Quieres conectar conmigo? Escríbeme o sígueme en mis redes:</p>
+        <a href="mailto:gisefonseca@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Correo</a>
+        <a href="https://github.com/agfonse3" target="_blank"> <i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://agfonse.itch.io/" target="_blank"><i class="fa-solid fa-gamepad"></i> Itch.io</a>
+    </div>
+</div>
+
+    </section>
+
+
+
 
     <footer>
         <p>&copy; 2025 Angela Fonseca. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
