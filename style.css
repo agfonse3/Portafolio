@@ -9,7 +9,6 @@ body {
 
 /* Encabezado */
 header {
-   
     height: auto;
     color: white;
     padding: 40px 20px;
@@ -132,6 +131,8 @@ section {
 .contenido {
     animation: fadeIn 1s ease-in-out;
 }
+
+/* Proyectos */
 
 .proyectos-container {
     display: flex;
