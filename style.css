@@ -7,6 +7,12 @@ body {
     padding: 0;
 }
 
+h2 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+}
+
 /* Encabezado */
 header {
     height: auto;
@@ -20,18 +26,28 @@ header {
 
 /* Navegación */
 nav {
+    font-family: "Orbitron", sans-serif;
     position: fixed;
     top: 0;
-      width: 100%;
+    width: 100%;
     background-color: #16213e;
     padding: 10px 0;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
-     animation: fadeIn 1s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra suave */
+    animation: fadeIn 1s ease-in-out;
 }
+
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-10px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 nav ul {
@@ -39,17 +55,18 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en móviles */
+    flex-wrap: wrap;
+    /* Permite que los elementos se acomoden en móviles */
 }
 
 nav ul li {
     display: inline;
     margin: 0px 40px;
-    
+
 }
 
 nav ul li a {
-     transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
     color: #eaeaea;
     text-decoration: none;
     font-weight: bold;
@@ -60,8 +77,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-     background: linear-gradient(45deg, #00b4d8, #004e92);
-    transform: scale(1.1); /* Agranda el botón al pasar el cursor */
+    background: linear-gradient(45deg, #00b4d8, #004e92);
+    transform: scale(1.1);
+    /* Agranda el botón al pasar el cursor */
 }
 
 
@@ -69,12 +87,14 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Convierte el menú en una lista vertical */
+        flex-direction: column;
+        /* Convierte el menú en una lista vertical */
         text-align: center;
     }
 
     nav ul li {
-        margin: 20px 0; /* Agrega más espacio entre los elementos */
+        margin: 20px 0;
+        /* Agrega más espacio entre los elementos */
     }
 }
 
@@ -85,9 +105,10 @@ section {
     margin: auto;
     text-align: center;
 }
+
 #sobre-mi {
-     margin-top: 40px;
-   background: linear-gradient(45deg, #16213e, #004e92); 
+    margin-top: 40px;
+    background: linear-gradient(45deg, #16213e, #004e92);
     color: white;
     padding: 40px;
     border-radius: 10px;
@@ -97,25 +118,31 @@ section {
 .contenido {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Imagen izquierda, texto derecha */
+    justify-content: space-between;
+    /* Imagen izquierda, texto derecha */
     gap: 20px;
 }
 
 .perfil {
-    width: 50%; /* Ocupará la mitad izquierda del contenedor */
-    height: 100%; /* Se ajusta a la altura disponible */
-    object-fit: cover; /* Evita que se deforme */
+    width: 50%;
+    /* Ocupará la mitad izquierda del contenedor */
+    height: 100%;
+    /* Se ajusta a la altura disponible */
+    object-fit: cover;
+    /* Evita que se deforme */
     border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
     .contenido {
-        flex-direction: column; /* Poner la imagen arriba y el texto abajo */
+        flex-direction: column;
+        /* Poner la imagen arriba y el texto abajo */
         text-align: center;
     }
 
     .perfil {
-        width: 80%; /* Hacer la imagen más grande en móviles */
+        width: 80%;
+        /* Hacer la imagen más grande en móviles */
     }
 }
 
@@ -126,9 +153,17 @@ section {
     max-width: 600px;
     line-height: 1.6;
 }
+
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .contenido {
@@ -139,11 +174,16 @@ section {
 
 .proyectos-container {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos horizontalmente */
-    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
-    gap: 20px; /* Espaciado entre elementos */
-    max-width: 1200px; /* Define un ancho máximo para evitar que los proyectos se expandan demasiado */
-    margin: 0 auto; /* Centra el contenedor */
+    justify-content: space-around;
+    /* Distribuye los elementos horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que se ajusten en pantallas pequeñas */
+    gap: 20px;
+    /* Espaciado entre elementos */
+    max-width: 1200px;
+    /* Define un ancho máximo para evitar que los proyectos se expandan demasiado */
+    margin: 0 auto;
+    /* Centra el contenedor */
 }
 
 .project {
@@ -151,9 +191,11 @@ section {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    width: 350px; /* Hace que cada proyecto ocupe un tercio del ancho */
+    width: 350px;
+    /* Hace que cada proyecto ocupe un tercio del ancho */
     text-align: center;
-    min-width: 300px; /* Evita que se hagan demasiado pequeños en pantallas reducidas */
+    min-width: 300px;
+    /* Evita que se hagan demasiado pequeños en pantallas reducidas */
 }
 
 
@@ -167,13 +209,15 @@ section {
     font-size: 24px;
     margin-top: 15px;
 }
+
 .project video {
     width: 100%;
     margin-top: 10px;
     border-radius: 10px;
 }
+
 .project a {
-   display: inline-block;
+    display: inline-block;
     margin-top: 15px;
     padding: 12px 20px;
     background: linear-gradient(45deg, #00b4d8, #004e92);
@@ -186,8 +230,8 @@ section {
 
 .project a:hover {
     background: linear-gradient(45deg, #004e92, #00b4d8);
-   transform: scale(1.1);
-   box-shadow: 0px 4px 15px rgba(0, 180, 216, 0.8);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 180, 216, 0.8);
 }
 
 /* Habilidades */
@@ -225,7 +269,8 @@ section {
 }
 
 .contacto-container {
-    background: linear-gradient(45deg, #16213e, #004e92); /* Fondo degradado elegante */
+    background: linear-gradient(45deg, #16213e, #004e92);
+    /* Fondo degradado elegante */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -254,7 +299,8 @@ section {
 }
 
 .info a i {
-    font-size: 20px; /* Tamaño del ícono */
+    font-size: 20px;
+    /* Tamaño del ícono */
 }
 
 .info a:hover {
@@ -283,14 +329,17 @@ footer {
     height: 100%;
     background: url('img/fondopag.gif') no-repeat center center;
     background-size: cover;
-    opacity: 0.1; /* Ajusta el nivel de transparencia */
-    z-index: -1; /* Envía el fondo detrás de los elementos */
+    opacity: 0.1;
+    /* Ajusta el nivel de transparencia */
+    z-index: -1;
+    /* Envía el fondo detrás de los elementos */
 }
 
 .banner {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribuye los elementos */
+    justify-content: space-between;
+    /* Distribuye los elementos */
     /*background: linear-gradient(45deg, #000428, #004e92); /* Degradado azul oscuro */
     color: white;
     padding: 20px;
@@ -302,19 +351,23 @@ footer {
 
 .control {
     margin-left: 5%;
-    width: 30%; /* Ajusta el tamaño del control */
+    width: 30%;
+    /* Ajusta el tamaño del control */
     height: auto;
     margin-right: 20px;
 }
+
 .text-container h1 {
+    font-family: "Orbitron", sans-serif;
     font-size: 40px;
     color: white;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
+
 #skills {
     text-align: center;
     padding: 40px;
-    
+
 }
 
 .skills-container {
@@ -322,23 +375,41 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 }
+.category ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide en dos columnas */
+    gap: 15px; /* Ajusta el espacio entre los elementos */
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
 .category li i {
-    font-size: 50px; /* Agranda los íconos */
-    margin-right: 20px; /* Aumenta la separación entre el ícono y el texto */
-    margin-top: 15px; /* Ajusta el espacio entre el ícono y el texto */
-     margin-bottom: 15px; /* Ajusta el espacio entre el ícono y el texto */
+    font-size: 30px;
+    /* Agranda los íconos */
+    margin-right: 20px;
+    /* Aumenta la separación entre el ícono y el texto */
+    margin-top: 15px;
+    /* Ajusta el espacio entre el ícono y el texto */
+    margin-bottom: 15px;
+    /* Ajusta el espacio entre el ícono y el texto */
 }
+
 .category li img {
-    width: 50px; /* Agranda los íconos */
-    height: 50px;
-    margin-top: 15px; /* Ajusta el espacio entre el ícono y el texto */
-     margin-bottom: 15px; /* Ajusta el espacio entre el ícono y el texto */
-    margin-right: 15px; /* Ajusta el espacio entre el ícono y el texto */
+    width: 30px;
+    /* Agranda los íconos */
+    height: 30px;
+    margin-top: 15px;
+    /* Ajusta el espacio entre el ícono y el texto */
+    margin-bottom: 15px;
+    /* Ajusta el espacio entre el ícono y el texto */
+    margin-right: 15px;
+    /* Ajusta el espacio entre el ícono y el texto */
 }
+
 .category {
     margin: 20px;
     padding: 20px;
-     background: linear-gradient(45deg, #001629, #0a2a5b);
+    background: linear-gradient(45deg, #001629, #0a2a5b);
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -366,3 +437,25 @@ li img {
     margin-right: 10px;
 }
 
+.cv-container .info a {
+    font-size: 16px;
+    /* Ajusta el tamaño del texto */
+    padding: 8px 12px;
+    /* Reduce el relleno interno */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaciado entre el icono y el texto */
+    background: linear-gradient(45deg, #00b4d8, #004e92);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 180, 216, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.cv-container .info a img {
+    width: 20px;
+    /* Reduce el tamaño del icono */
+    height: 20px;
+}
